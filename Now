@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+  int x(5), y(7), a(9), b(10);
+  
+  x+=y-a;
+  b*=y+x;
+  
+  cout<<b;
+  cout<<x;
+  
+  return 0;
+}
