@@ -12,25 +12,25 @@ using namespace std;
 float add(float a, float b)
 {
   // Implement a formula that will add a and b, and then return the result
-  
+  return (a+b);
 }
 
 float substract(float a, float b)
 {
   // Implement a formula that will substract a and b, and then return the result
-  
+  return (a-b);
 }
 
 float multiply(float a, float b)
 {
   // Implement a formula that will multiply a and b, and then return the result
-  
+  return (a*b);
 }
 
 float divide(float a, float b)
 {
   // Implement a formula that will divide a and b, and then return the result
-  
+  return (a/b);
 }
 
 int main ()
