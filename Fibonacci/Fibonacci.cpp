@@ -29,3 +29,5 @@ int main ()
   
   return 0;
 }
+/*0+1=1 1+1=2 1+2=3 2+3=5 3+5=8 5+8=14*/
+//x y z x y z x y z x y z x y z
