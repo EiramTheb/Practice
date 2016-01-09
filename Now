@@ -5,9 +5,13 @@ int main ()
 {
   int x(5), y(7), a(9), b(10);
   
+  // x = x + (y-a)
   x+=y-a;
+  
+  // b = b * (y+x)
   b*=y+x;
   
+  // cout << b << endln
   cout<<b;
   cout<<x;
   
