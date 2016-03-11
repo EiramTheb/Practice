@@ -19,10 +19,12 @@ void isEven(int x) //Test if the number leaves a remainder after being divided b
 {
     if (x % 2== 0)
         {std::cout<<std::boolalpha;
-            std::cout<< true <<std::endl;}
+            std::cout<< true <<std::endl;
+            std::cout<< "The integer is even" <<std::endl;}
     else
         {std::cout<<std::boolalpha;
-            std::cout<< false <<std::endl;}
+            std::cout<< false <<std::endl;
+            std::cout<< "The integer is odd" <<std::endl;}
       // Si cambias la funcion a q regrese void (nada), esto no hace sentido, so lo remueves
 }
 
