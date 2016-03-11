@@ -15,7 +15,7 @@ int userNumber() //Number to be tested, provided by user
 }
 
 // void isEven(int x)  seria la funcion correcta, pq abajo no estas asignandole el returned boolean a nada
-bool isEven(int x) //Test if the number leaves a remainder after being divided by 2
+void isEven(int x) //Test if the number leaves a remainder after being divided by 2
 {
     if (x % 2== 0)
         {std::cout<<std::boolalpha;
@@ -23,8 +23,7 @@ bool isEven(int x) //Test if the number leaves a remainder after being divided b
     else
         {std::cout<<std::boolalpha;
             std::cout<< false <<std::endl;}
-
-    return 0;       // Si cambias la funcion a q regrese void (nada), esto no hace sentido, so lo remueves
+      // Si cambias la funcion a q regrese void (nada), esto no hace sentido, so lo remueves
 }
 
 int main()
