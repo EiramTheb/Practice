@@ -17,10 +17,12 @@ int userNumber() //Number to be tested, provided by user
 bool isEven(int x) //Test if the number leaves a remainder after being divided by 2
 {
     if (x % 2== 0)
-        std::cout<< "True" << std::endl;
+        {std::cout<<std::boolalpha;
+            std::cout<< true <<std::endl;}
     else
-        std::cout<< "False" <<std::endl;
-    
+        {std::cout<<std::boolalpha;
+            std::cout<< false <<std::endl;}
+
     return 0;
 }
 
