@@ -33,3 +33,33 @@ int main()
     
     return 0;
 }
+
+/*
+
+int userNumber() //Number to be tested, provided by user
+{
+    std::cout<< "Enter an integer and press enter."<<std::endl;
+    int x;
+    std::cin>> x;
+    return x;
+}
+
+bool isEven(int x)
+{
+    if (x % 2== 0)
+        return true;
+    else
+        return false;
+}
+
+int main()
+{
+    int x= userNumber();
+    if(isEven(x));
+        std::cout << "The number you entered is even." << std::endl;
+    else
+        std::cout << "The number you entered is odd." << std::endl;
+    return 0;
+}
+
+*/
