@@ -6,6 +6,37 @@ AUTHOR: BETH M ESTEVEZ QUINTANA
 
 DESCRIPTION: Basic calculator that runs in terminal/command line, no GUI.
 **************************************************************************************/
+/* #include <iostream>
+
+
+int add (int x, int y)
+{
+    return x + y;
+}
+
+int multiply (int x, int y)
+{
+    return x*y;
+}
+
+int divide (int x, int y)
+{
+    return x/y;
+}
+
+int main ()
+
+{
+    std::cout<< add(5,2) << std::endl;
+    
+    std::cout << mult(3,6) << std::endl;
+    
+    std::cout<< divide(10,5)<< std::endl;
+    
+    return 0;
+}*/
+
+
 #include <iostream>
 using namespace std;
 
