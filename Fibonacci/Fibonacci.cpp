@@ -13,7 +13,46 @@ the result until that number of iterations. For example, if the user inputs 3, t
 program will calculate 0+1=1, 1+1=2, 2+1=3, and then return 3, as 3 is the result of 
 the 3rd iteration.
 **************************************************************************************/
+//After many tries and several explanations, my answer
+
 #include <iostream>
+using namespace std;
+
+int main()
+{
+    int x = 0;
+    int y = 1;
+    int z;
+    int a;
+    int icounter=0;
+    
+    cout << "Enter the iteration number for the Fibonacci sequence." << endl;
+    cin >> a; //user iteration value
+    cout << "You entered iteration number:" << a << endl;
+  
+  if (a < 1) {
+      cout << "Not gonna do it, try again"<< endl;
+  }
+      
+ else {
+    while (a != icounter) {
+        z = x + y;
+        if (a != icounter){
+            x = y;
+            y = z;
+            
+            icounter++;
+        }
+       
+     } 
+
+     cout << "Iteration number: " << a << " equals "<< z << endl;
+         
+ }
+    return 0;
+}
+
+/*#include <iostream>
 using namespace std;
 
 int fibonacci()
@@ -28,6 +67,6 @@ int main ()
   // Here we will run iterations until the number of iterations is satisfied
   
   return 0;
-}
+}*/
 /*0+1=1 1+1=2 1+2=3 2+3=5 3+5=8 5+8=14*/
 //x y z x y z x y z x y z x y z
