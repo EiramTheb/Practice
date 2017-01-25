@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    
+    double x;
+    double y;
+    double sum;
+    char math;
+    
+cout << "Please enter a value for x."<< endl;
+cin >> x;
+    
+cout << "Please enter a value for y."<< endl;
+cin >> y;
+    
+cout << "Please enter the mathematical equation you would like to see performed: +, -, * or /." << endl;
+cin >> math;
+    
+   // bool possible = true;
+   // bool notpossible = false;
+    
+    if(math == '+'){
+        sum = x + y;
+        cout << "The addition of "<< x << " and "<< y<< " equals " << sum<< endl;
+    }
+    else if(math == '-'){
+        sum = x - y;
+        cout << "The substraction of "<< x << " and "<< y<< " equals " << sum<< endl;
+    }
+    else if(math == '*'){
+        sum = x * y;
+        cout << "The multiplication of "<< x << " and "<< y<< " equals " << sum<< endl;
+    }
+    else if(math == '/'){
+        sum = x / y;
+        cout << "The division of "<< x << " and "<< y<< " equals " << sum<< endl;
+    }
+   // else
+       // notpossible;
+        
+    return 0;
+}
