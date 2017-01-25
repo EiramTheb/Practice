@@ -18,9 +18,15 @@ cin >> y;
 cout << "Please enter the mathematical equation you would like to see performed: +, -, * or /." << endl;
 cin >> math;
     
-   // bool possible = true;
-   // bool notpossible = false;
+    bool possible = true;
+    bool notpossible = false;
     
+  if(math != '+'||'-'||'*'||'/'){
+        false;
+        
+        return 0;
+        }
+  else{ 
     if(math == '+'){
         sum = x + y;
         cout << "The addition of "<< x << " and "<< y<< " equals " << sum<< endl;
@@ -37,8 +43,7 @@ cin >> math;
         sum = x / y;
         cout << "The division of "<< x << " and "<< y<< " equals " << sum<< endl;
     }
-   // else
-       // notpossible;
+  }
         
     return 0;
 }
