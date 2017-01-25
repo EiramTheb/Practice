@@ -21,12 +21,6 @@ cin >> math;
     bool possible = true;
     bool notpossible = false;
     
-  if(math != '+'||'-'||'*'||'/'){
-        false;
-        
-        return 0;
-        }
-  else{ 
     if(math == '+'){
         sum = x + y;
         cout << "The addition of "<< x << " and "<< y<< " equals " << sum<< endl;
@@ -43,7 +37,9 @@ cin >> math;
         sum = x / y;
         cout << "The division of "<< x << " and "<< y<< " equals " << sum<< endl;
     }
-  }
+    else if(math != '+'||'-'||'*'||'/'){
+        notpossible;
+        }
         
     return 0;
 }
