@@ -32,23 +32,21 @@ using namespace std;
 
 int main () 
 {
+  int y;
+        
   cout<< "I'm thinking of a number between 1 and 20. Can you guess it? GO!"<< endl;     //The game
   cout<< "Go ahead, enter your guess."<< endl;
   
-  
-  int y;
   cin>> y;      //stores user's guess
   
   int z= 1 + (rand()% 20);      //generates a random number between 1 and 20
   
-  if (y==z){
-      cout<< "You guessed right!"<< endl;       //if numbers are the same
-  }
-        else if (y<z){
-      cout<< "You went too low :( "<< endl;     //if they're not and it's lower
-  }
-        else if (y>z){
-      cout << "You went too high!!" << endl;    //if they're not and it's higher
-  }
+  if (y==z)
+    cout<< "You guessed right!"<< endl;       //if numbers are the same
+  else if (y<z)
+    cout<< "You went too low :( "<< endl;     //if they're not and it's lower
+  else
+    cout << "You went too high!!" << endl;    //if they're not and it's higher
+  
   return 0;
 }
