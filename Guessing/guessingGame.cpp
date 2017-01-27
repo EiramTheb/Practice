@@ -33,7 +33,7 @@ using namespace std;
 int main () 
 {
   int x=1;
-  
+  int y;
   int z= 1 + (rand()% 20);      //Decided to put it out here so the value doesn't get recalculated
  
   cout<< "I'm thinking of a number between 1 and 20. Can you guess it? GO!"<< endl;
@@ -41,7 +41,6 @@ int main ()
   
   for(x = 1; x <= 8; x++){
 
-  int y;
   cin>> y;
   
   if (y==z){
