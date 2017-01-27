@@ -45,7 +45,7 @@ int main ()
   cin>> y;
   
   if (y==z){
-      cout<< "You guessed right!"<< endl;
+      cout<< "You guessed right! \n Now Bye-Bye!"<< endl;
       return 0;}                        //exits the program once the user guesses right
   
     else if (y<z)
