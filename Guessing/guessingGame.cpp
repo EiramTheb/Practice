@@ -32,28 +32,28 @@ using namespace std;
 
 int main () 
 {
-  int x=1;
   int y;
   int z= 1 + (rand()% 20);      //Decided to put it out here so the value doesn't get recalculated
  
   cout<< "I'm thinking of a number between 1 and 20. Can you guess it? GO!"<< endl;
   cout<< "Go ahead, enter your guess, you have 8 tries."<< endl;      
   
-  for(x = 1; x <= 8; x++){
+  for(int x = 1; x <= 8; x++){
 
-  cin>> y;
+    cin>> y;
   
-  if (y==z){
+    if (y==z)
+    {
       cout<< "You guessed right! \n Now Bye-Bye!"<< endl;
-      return 0;}                        //exits the program once the user guesses right
+      return 0;
+    }                        //exits the program once the user guesses right
   
     else if (y<z)
       cout<< "You went too low :( \n Why don't you try again?" << endl;
   
-    else if (y>z)
+    else
       cout << "You went too high!! \n Why don't you try again?" << endl;
-
-    }
-    
+  }
+  
 return 0;
 }
