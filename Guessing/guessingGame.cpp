@@ -49,13 +49,11 @@ int main ()
       return 0;}                        //exits the program once the user guesses right
   
     else if (y<z)
-      cout<< "You went too low :( "<< endl;
+      cout<< "You went too low :( \n Why don't you try again?" << endl;
   
     else if (y>z)
-      cout << "You went too high!!" << endl;
-  
-  else
-      cout << "Why don't you try again? Enter you guess."<< endl;
+      cout << "You went too high!! \n Why don't you try again?" << endl;
+
     }
     
 return 0;
