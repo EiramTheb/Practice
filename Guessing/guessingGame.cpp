@@ -39,10 +39,16 @@ int main ()
   cout<< "I'm thinking of a number between 1 and 20. Can you guess it? GO!"<< endl;
   cout<< "Go ahead, enter your guess, you have 8 tries."<< endl;      
   
+  /*
+  For loop used for iterating between guesses.
+  */
+  // You can comment like this or the the comment above this one,
+  // it is upt to you, as long as you comment on top of the function/action/code block.
   for(x = 1; x <= 8; x++){
 
   cin>> y;
   
+  // Verify if guess is right. If it is right, exit program. If guess is too low or too high, let user guess again.
   if (y==z){
       cout<< "You guessed right! \n Now Bye-Bye!"<< endl;
       return 0;}                        //exits the program once the user guesses right
