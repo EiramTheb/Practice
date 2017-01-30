@@ -32,6 +32,7 @@ using namespace std;
 
 int main () 
 {
+  int x;
   int y;
         
   //Decided to put it out here so the value doesn't get recalculated
