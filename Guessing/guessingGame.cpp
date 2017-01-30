@@ -28,12 +28,14 @@ time whether he guessed high or low
 
 #include <iostream>
 #include <cstdlib>      //Adds library for random generated numbers
+#include <ctime>        //Allows random numbers from second counter
 using namespace std;
 
 int main () 
 {
   int x;
   int y;
+  srand(time(0));
         
   //Decided to put it out here so the value doesn't get recalculated
   //Stores a randomly generated number, value from 1 to 20, in variable z
