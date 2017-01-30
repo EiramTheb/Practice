@@ -24,21 +24,21 @@ time whether he guessed high or low
   
   
   // Tell the user if he guessed the right number or not
-  
-  //Preliminary work= first try; doesn't quite address all challenges
+
 #include <iostream>
-#include <cstdlib>
+#include <cstdlib>              //Adds library for random number generation
 using namespace std;
 
 int main () 
 {
-  int y;
+  int y;                        //Outside the for loop so it doesn't get created and destroyed every loop
   int z= 1 + (rand()% 20);      //Decided to put it out here so the value doesn't get recalculated
  
   cout<< "I'm thinking of a number between 1 and 20. Can you guess it? GO!"<< endl;
   cout<< "Go ahead, enter your guess, you have 8 tries."<< endl;      
   
-  for(int x = 1; x <= 8; x++){
+  for(int x = 1; x <= 8; x++){   //Parameters, x will start at 1 and go up 1 value every loop until it reaches 8. Program will
+                                 //close after 8 unsuccessful tries.
 
     cin>> y;
   
@@ -46,7 +46,7 @@ int main ()
     {
       cout<< "You guessed right! \n Now Bye-Bye!"<< endl;
       return 0;
-    }                        //exits the program once the user guesses right
+    }                             //exits the program once the user guesses right
   
     else if (y<z)
       cout<< "You went too low :( \n Why don't you try again?" << endl;
