@@ -15,7 +15,7 @@ the 3rd iteration.
 **************************************************************************************/
 //After many tries and several explanations, my answer
 
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 
 int main()
@@ -50,23 +50,54 @@ int main()
          
  }
     return 0;
-}
+}*/
 
-/*#include <iostream>
+// Revised Fibonacci
+
+#include <iostream>
 using namespace std;
 
-int fibonacci()
+int main()
 {
-  // Here we will do all the sneaky math behind the fibonacci algorithm
+    unsigned long long x = 0;
+    unsigned long long y = 0;
+    unsigned long long z;
+    unsigned long long a;
+    int icounter=0;
+    
+    cout << "Enter the iteration number for the Fibonacci sequence. (Max iteration number is 238)" << endl;
+    cin >> a; //user iteration value
+    cout << "You entered iteration number:" << a << endl;
   
-}
+  if (a < 1) {
+      cout << "Not gonna do it, try again"<< endl;
+  }
+     
+  else {
+    while (a != icounter) {
+        z = x + y;
+            //Prints all of the values for each iteration
+            cout << z << " ";
+        
+        //Creates a loop that makes possible getting the first 3 numbers of the sequence
+        if (icounter < 2){          
+            x = 0;
+            y = 1;
+            icounter++;
+            }
+        
+        //Once the first 3 values are achieved, uses this to get the highest possible sequence number
+        else if (a != icounter){
+            x = y;
+            y = z;
+            
+            icounter++;
+            }
+       
+     } 
 
-int main ()
-{
-  
-  // Here we will run iterations until the number of iterations is satisfied
-  
-  return 0;
-}*/
-/*0+1=1 1+1=2 1+2=3 2+3=5 3+5=8 5+8=14*/
-//x y z x y z x y z x y z x y z
+     cout << "Iteration number: " << a << " equals "<< z << endl;
+         
+ }
+    return 0;
+}
