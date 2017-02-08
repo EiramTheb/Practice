@@ -77,7 +77,7 @@ int main()
     while (a != icounter) {
         z = x + y;
             //Prints all of the values for each iteration
-            cout << z << " ";
+            cout << z << endl;
         
         //Creates a loop that makes possible getting the first 3 numbers of the sequence
         if (icounter < 2){          
