@@ -65,7 +65,7 @@ int main()
     unsigned int a;
     unsigned int icounter=0;
     
-    cout << "Enter the iteration number for the Fibonacci sequence. (Max iteration number is 237)" << endl;
+    cout << "Enter the iteration number for the Fibonacci sequence. (Max possible iteration number uncertain)" << endl;
     cin >> a; //user iteration value
     cout << "You entered iteration number:" << a << endl;
   
